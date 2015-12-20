@@ -1,9 +1,5 @@
+import dj_database_url
+
 DATABASES = {
-    'default': {
-        'ENGINE':'django.db.backends.mysql',
-        'NAME': 'kartavya',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-    }
+    'default': dj_database_url.config(default='mysql://USERNAME:PASSWORD@localhost/DATABASENAME')
 }
